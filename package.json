@@ -2,7 +2,7 @@
   "name": "myproject",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite ",
+    "dev": "vitegi",
     "build": "vite build",
     "serve": "vite preview"
   },
@@ -11,8 +11,5 @@
   },
   "dependencies": {
     "three": "^0.132.2"
-  },
-  "engines": {
-    "node": "14.x"
   }
 }
