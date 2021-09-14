@@ -2,7 +2,6 @@
   "name": "myproject",
   "version": "0.0.0",
   "scripts": {
-    "build:dev": "parcel src/index.html",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
