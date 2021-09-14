@@ -93,24 +93,25 @@ avatar.position.x = 2;
 
 // scroll animation
 
-function moveCamera () {
-  const t = document.body.getBoundingClientRect().top
-
-  moon.rotation.x += 0.05
-  moon.rotation.y += 0.075
-  moon.rotation.z += 0.05
-
-  avatar.rotation.y += 0.01
-  avatar.rotation.z += 0.01
+function moveCamera() {
+  const t = document.body.getBoundingClientRect().top;
   
-  camera.position.z = t * -0.01
-  camera.position.x = t * -0.0002
-  camera.position.y = t * -0.0002
+  moon.rotation.x += 0.05;
+  moon.rotation.y += 0.075;
+  moon.rotation.z += 0.05;
 
+  avatar.rotation.y += 0.01;
+  avatar.rotation.z += 0.01;
+
+  camera.position.z = t * -0.01;
+  camera.position.x = t * -0.0002;
+  camera.rotation.y = t * -0.0002;
+  
 }
 
-document.body.onscroll = moveCamera
-moveCamera()
+document.body.onscroll = moveCamera;
+moveCamera();
+
 
 // animation loop
 
@@ -120,8 +121,9 @@ function animate () {
   torus.rotation.x += 0.01
   torus.rotation.y += 0.005
   torus.rotation.z += 0.01
-
-  controls.update()
+  
+  moon.rotation.x += 0.005
+  
   renderer.render(scene, camera)
 }
 
